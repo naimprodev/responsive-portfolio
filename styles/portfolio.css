@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header and navigation style */
+.header {
+    background: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+    margin-left: 300px 200px 0 767px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 10px;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    border: 0;
+    padding: 18px 35px;
+    margin-right: 30px;
+}
+
+/* Banner style */
+.banner {
+    display: flex;
+    margin: 0 200px;
+    align-items: center;
+}
+
+.icon {
+    color: #FD6E0A;
+    font-weight: 700;
+    font-size: 20px;
+    height: 64px;
+    padding: 18px 35px;
+
+}
+
+
+
+.banner-title {
+    font-weight: 700;
+    font-size: 85px;
+}
+
+.banner-subtitle {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.banner-discription {
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* main section style */
+section {
+    margin-top: 130px;
+}
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section style  */
+.about {
+    /* margin-top: 130px; */
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-description {
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* container style */
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info-title {
+    font-size: 20px;
+    color: #757575;
+}
+
+.about-info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+}
+
+/* what i do */
+/* .what-i-do {
+    margin-top: 130px;
+} */
+
+.skill {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 167px;
+    text-align: center;
+}
+
+.skill-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skill-description {
+    color: #757575;
+}
+
+/* resume style  */
+.resume-container {
+    display: flex;
+    gap: 24px;
+}
+
+.resume-items {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.resume .title {
+    color: #474747;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.resume .sub-title {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.resume .description {
+    color: #757575;
+}
+
+.resume-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* contac style */
+.contac {
+    display: flex;
+    gap: 100px;
+    background-color: #FFF8F3;
+    padding: 130px 230px;
+}
+
+.contac .section-title {
+    text-align: left;
+}
+
+.contac input[type="text"],
+[type="email"],
+textarea {
+    margin-bottom: 24px;
+    width: 100%;
+    border: 0;
+    padding: 18px 30px;
+}
+
+input {
+    height: 64px;
+}
+
+.contac a {
+    text-decoration: none;
+}
+
+/* responsive style */
+
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: none;
+    }
+
+    .banner,
+    nav,
+    .skills-container,
+    .resume-container,
+    .about-info-container,
+    .contac {
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    .banner {
+        margin: 0 20px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .contac input[type="text"],
+    [type="email"],
+    textarea {
+        padding: 0 0 0 5px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .header, main, footer{
+        height: 100%;
+        
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .header {
+        background-image: none;
+    }
+    .banner-root{
+        margin-left: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    .banner,
+    nav,
+    .resume-container,
+    .about-info-container,
+    .contac {
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+    .skills-container{
+        flex-direction: row;
+        padding: 20px;
+        margin-top: -5px;
+    }
+    .section-title{
+        display: flex;
+        justify-content: center;
+    }
+    .resume-container{
+        flex-direction: row;
+        padding: 10px;
+    }
+    .banner {
+        margin: 0 20px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: -80px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+    .about-info-container{
+        flex-direction: row;
+    }
+
+    .contac input[type="text"],
+    [type="email"],
+    textarea {
+        padding: 0 0 0 5px;
+    }
+}
+
+
+
+.hide {
+    display: none;
+}
